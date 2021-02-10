@@ -5,12 +5,18 @@ public class GardenShop {
     private int fetilizerIndex = 0 ;
 
     public  void addFlower (Flower flower){
+        if (flowerIndex < flowers.length) {
         flowers [flowerIndex++] = flower;
-
+        }
+        else System.out.println("brak miejsca na kwiat");
     };
 
     public  void addFetilizer (Fetilizer fetilizer){
-       fetilizers [fetilizerIndex++] = fetilizer;
+        if (fetilizerIndex < fetilizers.length) {
+            fetilizers[fetilizerIndex++] = fetilizer;}
+
+          else  System.out.println("brak miejsca na nawóz");
+
 
     };
 
