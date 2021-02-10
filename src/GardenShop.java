@@ -17,8 +17,11 @@ public class GardenShop {
     public void displayAll() {
         for (int i = 0; i < flowerIndex; i++) {
             flowers[i].display();
-
+        }
+        for (int i = 0; i < fetilizerIndex; i++) {
+            fetilizers[i].display();
         }
     }
+
 
 }

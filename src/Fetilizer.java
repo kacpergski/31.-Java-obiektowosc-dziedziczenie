@@ -8,6 +8,10 @@ public class Fetilizer {
         this.price = price;
         this.purpose = purpose;
     }
-
-
+    public void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Price: " + price);
+        System.out.println("Purpose: " + purpose);
+    }
 }
+
