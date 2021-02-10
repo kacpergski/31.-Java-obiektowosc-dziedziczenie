@@ -16,10 +16,16 @@ public class GardenShop {
 
     public void displayAll() {
         for (int i = 0; i < flowerIndex; i++) {
-            flowers[i].display();
+            Flower flower = flowers[i];
+            System.out.println("Name: " + flower.getName());
+            System.out.println("Price: " + flower.getPrice());
+            System.out.println("Type: " + flower.getType());
         }
         for (int i = 0; i < fetilizerIndex; i++) {
-            fetilizers[i].display();
+          Fetilizer fetilizer = fetilizers[i];
+            System.out.println("Name: " + fetilizer.getName());
+            System.out.println("Price: " + fetilizer.getPrice());
+            System.out.println("Purpose: " + fetilizer.getPurpose());
         }
     }
 
