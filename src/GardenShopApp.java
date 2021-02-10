@@ -33,6 +33,16 @@ public class GardenShopApp {
                     break;
 
                 case 2:
+
+                    System.out.println("Name: ");
+                    name = scanner.nextLine();
+                    System.out.println("Price: ");
+                    price = scanner.nextDouble();
+                    scanner.nextLine();
+                    System.out.println("Purpose: ");
+                    String purpose = scanner.nextLine();
+                    Fetilizer fetilizer = new Fetilizer(name,price,purpose);
+                    gardenShop.addFetilizer(fetilizer);
                     break;
 
                 case 3:
